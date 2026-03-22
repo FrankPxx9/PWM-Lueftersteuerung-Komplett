@@ -1,0 +1,55 @@
+Required Libraries for PWM Fan Controller
+==========================================
+
+This file lists all the libraries needed to compile and run the Lueftersteuerung.ino sketch.
+
+CORE LIBRARIES (Built-in ESP8266)
+=================================
+- ESP8266WiFi (for WiFi connectivity)
+- ESP8266WebServer (for HTTP server)
+- LittleFS (for file system storage)
+
+EXTERNAL LIBRARIES (Must be installed via Arduino IDE)
+=====================================================
+
+1. OneWire
+   - Author: Jim Studt, et al.
+   - Version: 2.3.7 or higher
+   - Installation: Sketch > Include Library > Manage Libraries > Search "OneWire"
+   - Purpose: Communication protocol for DS18B20 sensor
+   - Link: https://github.com/PaulStoffregen/OneWire
+
+2. DallasTemperature
+   - Author: Miles Burton, et al.
+   - Version: 3.9.0 or higher
+   - Installation: Sketch > Include Library > Manage Libraries > Search "DallasTemperature"
+   - Purpose: Simplified interface for DS18B20 temperature sensor
+   - Link: https://github.com/milesburton/Arduino-Temperature-Control-Library
+
+INSTALLATION INSTRUCTIONS
+=========================
+
+Step 1: Open Arduino IDE
+
+Step 2: Go to Sketch > Include Library > Manage Libraries
+   (Or press Ctrl+Shift+I on Windows/Linux or Cmd+Shift+I on Mac)
+
+Step 3: Search for "OneWire"
+   - Click on "OneWire" by Jim Studt
+   - Click "Install"
+   - Wait for installation to complete
+
+Step 4: Search for "DallasTemperature"
+   - Click on "DallasTemperature" by Miles Burton
+   - Click "Install"
+   - Wait for installation to complete
+
+Step 5: Restart Arduino IDE
+
+VERIFICATION
+============
+
+To verify that libraries are correctly installed:
+1. Open Arduino IDE
+2. Go to Sketch > Include Library
+3. You should see "OneWire" and "DallasTemperature" in the list
