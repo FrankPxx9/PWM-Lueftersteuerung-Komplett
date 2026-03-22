@@ -1,0 +1,32 @@
+# Einkaufsliste für Elektronikkomponenten
+
+## Elektronikkomponenten
+- Mikrocontroller: ATmega328p - ca. 3,00 €
+- Raspberry Pi 4 - ca. 40,00 €
+
+## Widerstände
+- 1kΩ Widerstand (5 Stück) - ca. 0,50 €
+- 10kΩ Widerstand (5 Stück) - ca. 0,50 €
+
+## Kondensatoren
+- 10μF Elektrolytkondensator (5 Stück) - ca. 1,00 €
+- 100nF Keramikkondensator (5 Stück) - ca. 0,50 €
+
+## Steckverbinder
+- JST Stecker (5 Stück) - ca. 1,50 €
+- Dupont Stecker (100 Stück) - ca. 5,00 €
+
+## Stromversorgung
+- 5V 2A Netzteil - ca. 10,00 €
+- USB Powerbank - ca. 15,00 €
+
+## Werkzeuge
+- Lötkolben - ca. 20,00 €
+- Multimeter - ca. 15,00 €
+
+## Empfohlene Online-Händler
+- **Amazon** - sehr große Auswahl
+- **Conrad** - gute Preise und schnelle Lieferung
+- **Reichelt** - günstige Elektronik und schnelle Versandzeiten
+
+*Preise können variieren, bitte die aktuellen Preise vor dem Kauf überprüfen.*
