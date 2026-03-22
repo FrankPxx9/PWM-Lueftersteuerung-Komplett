@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWM Fan Controller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PWM Fan Control Dashboard</h1>
+    </header>
+    <main>
+        <section id="fan-control">
+            <h2>Control Your Fans</h2>
+            <label for="fan-speed">Fan Speed (%):</label>
+            <input type="range" id="fan-speed" name="fan-speed" min="0" max="100" value="50" onchange="updateFanSpeed(this.value)">
+            <p>Current Speed: <span id="current-speed">50</span>%</p>
+        </section>
+    </main>
+    <script>
+        function updateFanSpeed(speed) {
+            document.getElementById('current-speed').textContent = speed;
+            // Here you would typically add functionality to send the speed to the fan controller.
+        }
+    </script>
+</body>
+</html>
