@@ -1,0 +1,61 @@
+# PWM Fan Controller Documentation
+
+## Circuit Diagram
+
+```
+   +-----------------+
+   |     ESP8266     |
+   |                 |
+   |    GPIO 4 ------|-------------------> PWM Signal to MOSFET
+   |                 |
+   |    GPIO 5 ------|-------------------> DS18B20 Data Pin
+   |                 |
+   +-------+---------+
+           |
+           |  +-----------------+
+           |  |   DS18B20       |
+           |  |                 |
+           +--|  VDD ------> +5V|
+              |                 |
+              | GND ------> GND|
+              +-----------------+
+
+   +------------------+
+   |    MOSFET        |
+   |                  |
+   |   VGS ------>  GPIO 4  
+   |   GND ------> GND   
+   |   DRAIN -----> Fan+  
+   |   SOURCE -----> Power Supply-
+   |                  |
+   +------------------+
+
+   +--------------------+
+   | Power Supply       |
+   | +5V ---------> Fan+|
+   | GND ---------> Fan-| 
+   +--------------------+
+```
+
+## Pin Connections
+- **ESP8266 Pinout:**
+  - GPIO 4: PWM Signal to MOSFET
+  - GPIO 5: DS18B20 Data Pin
+
+- **DS18B20 Connections:**
+  - VDD: Connect to +5V
+  - GND: Connect to GND
+
+- **MOSFET Wiring:**
+  - VGS: Connect to GPIO 4
+  - GND: Connect to GND
+  - DRAIN: Connect to Fan+
+  - SOURCE: Connect to Power Supply-
+
+- **Power Supply Connections:**
+  - +5V: Connect to Fan+
+  - GND: Connect to Fan- 
+
+## Additional Notes:
+- Ensure all connections are secure before powering the circuit.
+- Test the PWM signal before connecting to the fan to avoid damage.
